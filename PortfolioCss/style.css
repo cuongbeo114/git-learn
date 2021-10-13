@@ -1,0 +1,599 @@
+body
+{
+    font-family: 'Kosugi', sans-serif;
+}
+
+section
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*----------- start of header------------------------------------*/
+header
+{
+    position: fixed;
+    width:100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
+header .logo
+{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Londrina Solid', cursive; 
+    font-size: 3em;
+    font-weight: 500;
+    padding-left: 100px;
+}
+header .logo span
+{
+    color: #111;
+}
+header ul
+{
+    position: relative;
+    padding-right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+header ul li a
+{
+    text-decoration: none;
+    color: #111;
+    font-size: 2em;
+    font-weight: 400;
+    transition: 0.5s;
+}
+header ul li a:hover
+{
+    color: #f00;
+}
+header.sticky
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #333;
+}
+header.sticky .logo span
+{
+    color: #DB7830;
+}
+header.sticky ul li a
+{
+    color: #fff;
+}
+header.sticky ul li a:hover
+{
+    color: #f00;
+}
+/*---------end of header-------------------------------------*/
+.banner
+{
+    background: url(../PortfolioImg/bg1.jpg);
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+}
+.banner .content
+{
+    position: relative;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    font-size: 14px;
+}
+.banner .content h2
+{
+    color: #fff;
+    font-size: 2em;
+    line-height: 1.4em;
+    font-weight: 400;
+}
+.banner .content span
+{
+    color: #DB7830;
+    font-family: 'Londrina Solid', cursive;
+    font-size: 3em;
+    line-height: 1em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    
+}
+.banner .content a
+{
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    max-width: 5vw;
+    padding: 10px 20px;
+    background: #DB7830;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    border-radius: 20px;
+    border: 2px solid rgba(255,255,255,0.5);
+    margin-top: 20px;
+    font-family: 'Londrina Solid', cursive;
+    transition: 0.5s;
+}
+.banner .content a:hover
+{
+    transform: scaleX(1.2);
+}
+/*----------- end of banner---------------------------------------*/
+/*------- all of section text-------------------------------------*/
+section .text
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+section .text h2
+{
+    font-size: 3em;
+    font-weight: 500;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-family: 'Londrina Solid', cursive;
+}
+section .text h2 span
+{
+    color: #DB7830;
+    font-family: 'Londrina Solid', cursive;
+    font-size: 2em;
+    font-weight: 600;
+    text-decoration: underline;
+    
+    
+}
+section .text p
+{
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.4em;
+    font-size: 1.3em;
+}
+
+/*-------start of skills-----------------------------------------------------------------*/
+.skills
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(../PortfolioImg/vietcuong.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    padding-bottom: 40px;
+    min-height: 80vh;
+}
+}
+.skills .text p
+{
+    display: block;
+    text-align: center;
+    position: relative;
+    margin: 0 21vw;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    word-wrap: normal;
+    font-family: 'Kosugi', sans-serif;
+    color: #333;
+}
+.skills .text h2
+{
+    color: #333;
+}
+.progress-bars-wrapper
+{
+    position: relative;
+    font-size: 14px;
+}
+.progress-bar 
+{
+    width: 60vw;
+    height: 3em;
+    background-color: #ccc;
+    margin: 1.5em 0;
+    border-radius: 0.3em;
+    box-shadow: 0.2em 0.2em 1em #555;
+    position: relative;
+}
+
+.progress-text 
+{
+    position: absolute;
+    left: 1em;
+    font-size: 1.5em;
+    color: #fff;
+    text-align: center;
+    
+}
+
+.progress-text span 
+{
+    margin: 0 0.5em;
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+.progress-percent 
+{
+    width: 0;
+    height: 100%;
+    background-color: #DB7830;
+    border-radius: 0.3em;
+    transition: width 1s 0.5s ease-in-out;
+}
+.skills .study
+{
+    background-color: #fff;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 5px;
+    position: relative;
+}
+.skills .study .text 
+{
+    position: relative;
+    width: 30%;
+    font-family: 'Kosugi', sans-serif;
+    font-size: 14px;
+    background-color: rgba(0,0,0,0.2);
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.skills .study .text h1
+{
+    margin: 30px;
+    font-size: 2em;
+    font-weight: 600;
+    color: #333;
+}
+.skills .study .text a
+{
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+    background-color: #fff;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.skills .study .text a:hover
+{
+    background-color: rgba(0,0,0,0.2);
+}
+.skills .study .text img
+{
+    position: relative;
+    width: 400px;
+    height: 224px;
+}
+/*----end of skills-----------------------------------------------*/
+/*------start of product-----------------------------------------*/
+.product
+{
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+.product .content
+{
+    position: relative;
+    display: flex;
+    justify-content:flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.product .content .imgBx
+{
+    position: relative;
+    width: 1500px;
+    height: 825px;
+    transition: 0.5s;
+    border-radius: 10px;
+    font-size: 14px;
+    
+}
+.product .content .imgBx h1
+{
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    font-size: 6em;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.5;
+    font-family: 'Londrina Solid', cursive;
+    text-decoration: underline;
+    
+}
+.product .content .imgBx img
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    border-radius: 10px;
+    transition: 0.5s;
+    opacity: 1;
+    cursor: pointer;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.product .content .imgBx:hover
+{
+    background-color: #DB7830;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
+    
+}
+.product .content .imgBx img:hover
+{
+    transform: scale(1);
+    
+}
+.product .content .imgBx .note
+{
+    position: absolute;
+    left: 30px;
+    bottom: 45%;
+    width: 250px;
+    z-index: 1;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 300;
+    font-family: 'Kosugi', sans-serif;
+    line-height: 1.2;
+    
+    
+}
+.product .content .imgBx .note span
+{
+    font-size: 1.5em;
+    font-weight: 500;
+    text-decoration: underline;
+}
+.product .content .imgBx .note p
+{
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+/*--------end of product------------------------------*/
+/*----------start of design---------------------------------------*/
+.design
+{
+    position: relative;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px;
+    background-color:moccasin;
+}
+.design .work
+{
+    position: relative; 
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 20px;
+}
+.design .work .workBx
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.design .work h1
+{
+    font-size: 2em;
+    font-weight: 500;
+    color: #333;
+}
+.design .work .problem
+{
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin-top: 20px;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.design .work .problem .note
+{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    text-align: left;
+    margin-right: 20px;
+}
+.design .work .problem .note span
+{
+    font-size: 1em;
+    font-weight: 400;
+    text-decoration: underline;
+}
+.design .work .problem .note p
+{
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+.design .work .problem .imgBx
+{
+    position: relative;
+    width: 50%;
+}
+.design .work .problem .imgBx img
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+}
+
+#footer
+{
+    margin-bottom: 30px;
+    position: relative;
+    width: 80vw;
+    text-align: center;
+    margin: 0 auto;
+    cursor: pointer;
+    margin-top: 30px;
+}
+#footer .imgList
+{
+    position: relative;
+    width: 1000px;
+    height: 800px;
+    padding-bottom: 20px;   
+    font-size: 14px;
+}
+#footer .imgList p
+{
+    opacity: 9999;
+    color: #DB7830;
+    font-size: 2em;
+    position: relative;
+    bottom: 50px;
+    margin: 0 auto;
+    font-family: 'Kosugi', sans-serif;
+    font-weight: bolder;
+    
+}
+#footer .imgList:nth-child(5) p,
+#footer .imgList:nth-child(6) p,
+#footer .imgList:nth-child(7) p,
+#footer .imgList:nth-child(8) p
+{
+    color: white;
+}
+#footer .imgList img
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10 15 rgba(0,0,0,0.5);
+}
+#footer .slick-dots
+{
+    bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+}
+#footer .slick-dots li
+{
+    padding: 0 5px;
+}
+#footer .slick-dots li button
+{
+    background-color: #DB7830;
+    border:none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    position: relative;
+    color: #fff;
+    display: inline-block;
+    align-items: center;
+    transition: 0.5s;
+
+}
+#footer .slick-dots li.slick-active button
+{
+    color: #fff;
+    background-color: #333;
+}
+.end
+{
+    position: relative;
+    width: 100%;
+    background-color: #DB7830;
+    bottom: 0px;
+}
+.end h2
+{
+    align-items: center;
+    padding: 10px 0;
+    color: #fff;
+    font-family: 'Kosugi', sans-serif;
+    font-size: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
